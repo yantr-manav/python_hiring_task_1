@@ -14,32 +14,37 @@ This task tests your understanding of:
 ---
 
 ## 🎯 Objectives
+1. **Create a virtual environment** for the project.
 
-1. **Read images** from a folder (`input_images/`).  
+2. **Install dependencies** from `requirements.txt`.
+
+3. **Generate sample images** using `sample_data_generation.py`.
+
+4. **Read images** from a folder (`input_images/`).  
    Images may contain **transparent backgrounds** and **random shapes**.
 
-2. **Preprocess images**:
+5. **Preprocess images**:
    - Remove transparent background (optional for packing optimization)
    - Crop images to the **bounding box of the visible area**
    - Preserve **original aspect ratio**
 
-3. **Pack images optimally** into pages of a PDF:
+6. **Pack images optimally** into pages of a PDF:
    - Each page can have a **fixed size** (A4, Letter, or configurable)
    - **Minimize wasted space**
 
-4. **Generate a PDF** (`output.pdf`) with all images properly packed.
+7. **Generate a PDF** (`output.pdf`) with all images properly packed.
 
 ---
 
 ## 🛠 Starter Files
 
-| File | Description |
-|------|-------------|
+| File | Description | Additional Notes |
+|------|-------------| ---------|
 | `sample_data_generation.py` | Script for generating sample images | Run `python sample_data_generation.py` to generate sample images |
 | `input_images/` | Folder containing generated images | Folder will be created if it doesn't exist when the script is run |
 | `task_1_starter_code.py` | Starter template for implementing the packing algorithm |
-| `README.md` | This file |
-| `requirements.txt` | List of dependencies required to run the program |
+| `README.md` | This file | |
+| `requirements.txt` | List of dependencies required to run the program | Install these in a virtual environment |
 ---
 
 ## 📦 Steps
