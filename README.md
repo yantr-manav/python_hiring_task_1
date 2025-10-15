@@ -34,6 +34,10 @@ This task tests your understanding of:
 
 7. **Generate a PDF** (`output.pdf`) with all images properly packed.
 
+8. **Update the requirements.txt file** with the necessary dependencies.
+
+9. **Update README.md** with instructions for running the program.
+
 ---
 
 ## 🛠 Starter Files
