@@ -6,7 +6,7 @@ Your goal is to implement a **Python program** that arranges a set of images of 
 
 This task tests your understanding of:
 
-- **Bin packing / rectangle packing algorithms**
+- **Rectangle packing algorithms**
 - **Image processing**
 - **PDF generation**
 - **Efficient code design**
@@ -35,15 +35,19 @@ This task tests your understanding of:
 
 | File | Description |
 |------|-------------|
-| `input_images/` | Folder containing generated images |
-| `bin_packing_task.py` | Starter template for implementing the bin packing algorithm |
+| `sample_data_generation.py` | Script for generating sample images | Run `python sample_data_generation.py` to generate sample images |
+| `input_images/` | Folder containing generated images | Folder will be created if it doesn't exist when the script is run |
+| `task_1_starter_code.py` | Starter template for implementing the packing algorithm |
 | `README.md` | This file |
-
+| `requirements.txt` | List of dependencies required to run the program |
 ---
 
-## 📦 Usage
+## 📦 Steps
 
-1. Install dependencies:
+Follow these steps to get started:
 
-```bash
-pip install pillow reportlab
+1. Create a virtual environment for the project.
+2. Install dependencies from `requirements.txt`.
+3. Run the `sample_data_generation.py` script to generate sample images.
+4. Edit and implement the task in `task_1_starter_code.py`.
+5. Run your solution to generate the output PDF.

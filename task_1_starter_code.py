@@ -24,4 +24,5 @@ def generate_pdf(input_dir, output_pdf_path, page_size):
 
 
 if __name__ == "__main__":
+    
     generate_pdf(INPUT_DIR, OUTPUT_PDF, PAGE_SIZE)
