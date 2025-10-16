@@ -60,3 +60,10 @@ Follow these steps to get started:
 3. Run the `sample_data_generation.py` script to generate sample images.
 4. Edit and implement the task in `task_1_starter_code.py`.
 5. Run your solution to generate the output PDF.
+
+## Bonus Points
+
+1. **Optimize image compression** to reduce file size.
+2. **Implement a command-line interface** for running the program.
+3. **Add documentation** to explain the program's functionality.
+4. **Implement error handling** for handling edge cases.
