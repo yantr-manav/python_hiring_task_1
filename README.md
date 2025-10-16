@@ -1,6 +1,6 @@
 # Learn Basics Take-Home Task: Image Packing on PDF
 
-## 📝 Task Overview
+## Task Overview
 
 Your goal is to implement a **Python program** that arranges a set of images of **random sizes and shapes** into a PDF in a way that **minimizes the total space used**, while preserving each image's **original aspect ratio**.
 
@@ -13,34 +13,37 @@ This task tests your understanding of:
 
 ---
 
-## 🎯 Objectives
-1. **Create a virtual environment** for the project.
+## Getting Started
 
-2. **Install dependencies** from `requirements.txt`.
+1. **Clone the repository** to your local machine.
 
-3. **Generate sample images** using `sample_data_generation.py`.
+2. **Create a virtual environment** for the project.
 
-4. **Read images** from a folder (`input_images/`).  
+3. **Install dependencies** from `requirements.txt`.
+
+4. **Generate sample images** using `sample_data_generation.py`.
+
+5. **Read images** from a folder (`input_images/`).  
    Images may contain **transparent backgrounds** and **random shapes**.
 
-5. **Preprocess images**:
+6. **Preprocess images**:
    - Remove transparent background (optional for packing optimization)
    - Crop images to the **bounding box of the visible area**
    - Preserve **original aspect ratio**
 
-6. **Pack images optimally** into pages of a PDF:
+7. **Pack images optimally** into pages of a PDF:
    - Each page can have a **fixed size** (A4, Letter, or configurable)
    - **Minimize wasted space**
 
-7. **Generate a PDF** (`output.pdf`) with all images properly packed.
+8. **Generate a PDF** (`output.pdf`) with all images properly packed.
 
-8. **Update the requirements.txt file** with the necessary dependencies.
+9. **Update the requirements.txt file** with the necessary dependencies.
 
-9. **Update README.md** with instructions for running the program.
+10. **Update README.md** with instructions for running the program.
 
 ---
 
-## 🛠 Starter Files
+## Starter Files
 
 | File | Description | Additional Notes |
 |------|-------------| ---------|
@@ -51,7 +54,7 @@ This task tests your understanding of:
 | `requirements.txt` | List of dependencies required to run the program | Install these in a virtual environment |
 ---
 
-## 📦 Steps
+## Steps
 
 Follow these steps to get started:
 
