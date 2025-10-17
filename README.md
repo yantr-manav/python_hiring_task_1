@@ -1,72 +1,66 @@
-# Learn Basics Take-Home Task: Image Packing on PDF
+# Image Packing to PDF Take-Home Task
 
-## Task Overview
-
-Your goal is to implement a **Python program** that arranges a set of images of **random sizes and shapes** into a PDF in a way that **minimizes the total space used**, while preserving each image's **original aspect ratio**.
-
-This task tests your understanding of:
-
-- **Rectangle packing algorithms**
-- **Image processing**
-- **PDF generation**
-- **Efficient code design**
+This project is a Python program that automatically arranges a collection of images of various sizes into a multi-page PDF. It optimizes the placement to minimize wasted space while preserving each image's original aspect ratio. The script is designed to handle images with transparent backgrounds by cropping them to their visible content before packing.
 
 ---
 
-## Getting Started
+## Features
 
-1. **Clone the repository** to your local machine.
-
-2. **Create a virtual environment** for the project.
-
-3. **Install dependencies** from `requirements.txt`.
-
-4. **Generate sample images** using `sample_data_generation.py`.
-
-5. **Read images** from a folder (`input_images/`).  
-   Images may contain **transparent backgrounds** and **random shapes**.
-
-6. **Preprocess images**:
-   - Remove transparent background (optional for packing optimization)
-   - Crop images to the **bounding box of the visible area**
-   - Preserve **original aspect ratio**
-
-7. **Pack images optimally** into pages of a PDF:
-   - Each page can have a **fixed size** (A4, Letter, or configurable)
-   - **Minimize wasted space**
-
-8. **Generate a PDF** (`output.pdf`) with all images properly packed.
-
-9. **Update the requirements.txt file** with the necessary dependencies.
-
-10. **Update README.md** with instructions for running the program.
+-   **Automatic Cropping**: Intelligently removes empty transparent space around image content.
+-   **Efficient Packing**: Uses a guillotine-based rectangle packing algorithm to minimize wasted space on each page.
+-   **PDF Generation**: Outputs a clean, multi-page PDF with all images properly placed.
+-   **Robust Handling**: Gracefully handles and processes empty or fully transparent images without crashing.
+-   **Dependency Management**: All required libraries are listed in `requirements.txt`.
 
 ---
 
-## Starter Files
+## Requirements
 
-| File | Description | Additional Notes |
-|------|-------------| ---------|
-| `sample_data_generation.py` | Script for generating sample images | Run `python sample_data_generation.py` to generate sample images |
-| `input_images/` | Folder containing generated images | Folder will be created if it doesn't exist when the script is run |
-| `task_1_starter_code.py` | Starter template for implementing the packing algorithm |
-| `README.md` | This file | |
-| `requirements.txt` | List of dependencies required to run the program | Install these in a virtual environment |
+-   Python 3.7+
+
 ---
 
-## Steps
+## 🚀 How to Run
 
-Follow these steps to get started:
+Follow these steps to set up and run the project on your local machine.
 
-1. Create a virtual environment for the project.
-2. Install dependencies from `requirements.txt`.
-3. Run the `sample_data_generation.py` script to generate sample images.
-4. Edit and implement the task in `task_1_starter_code.py`.
-5. Run your solution to generate the output PDF.
+### 1. Clone the Repository
 
-## Bonus Points
+First, clone the repository to your local machine using git.
 
-1. **Optimize image compression** to reduce file size.
-2. **Implement a command-line interface** for running the program.
-3. **Add documentation** to explain the program's functionality.
-4. **Implement error handling** for handling edge cases.
+```bash
+git clone <your-repository-url>
+cd python_hiring_task_1
+```
+### 2. Create a Virtual Environment
+It is highly recommended to use a virtual environment to manage project dependencies.
+
+```bash
+# Create the virtual environment
+python -m venv venv
+
+# Activate on Windows
+.\venv\Scripts\activate
+
+# Activate on macOS/Linux
+source venv/bin/activate
+```
+### 3. Install Dependencies
+Install all the required libraries using the ```requirements.txt``` file.
+
+```bash
+pip install -r requirements.txt
+```
+### 4. Generate Sample Data
+The project comes with a script to generate sample images for testing. Run the following command to create 50 sample images in the ```input_images/``` directory.
+
+```bash 
+python sample_data_generation.py
+```
+
+### 5. Run the Main Program
+Execute the main script to start the image processing and PDF generation.
+
+```bash 
+python task_1_starter_code.py
+```
